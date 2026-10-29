@@ -1,0 +1,12 @@
+package padroescomportamentais.chainofresponsability;
+
+public class ResponsavelCoordenador extends Responsavel {
+    public ResponsavelCoordenador(Responsavel superior) {
+        listaSolicitacoes.add(TipoSolicitacaoCompra.getTipoSolicitacaoCompra());
+        setResponsavelSuperior(superior);
+    }
+
+    public String getDescricaoCargo() {
+        return "Coordenador";
+    }
+}
